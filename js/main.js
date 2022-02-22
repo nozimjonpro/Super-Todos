@@ -33,7 +33,9 @@ speech.addEventListener('click', ()=>{
       isCompleted: false
     };
     todos.push(speechObj);
-    console.log(todos)
+    if(todos.length>=0){
+      elButtons.style.display = 'block'
+    }
     renderTodo(todos, elTodoList)
     }
 
