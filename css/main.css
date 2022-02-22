@@ -60,7 +60,7 @@ main {
 #speech{
   position: absolute;
   top: 65px;
-  left: 930px;
+  left: calc(50% + 150px);
   width: 30px;
   height: 37px;
  background-color: transparent;
