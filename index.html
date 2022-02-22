@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+    <main class="main">
+      <button id="speech"><img class="microphone" src="./img/microphone.png" width="30" height="30" alt=""></button>
+      <section class="todos__section">
+        <div class="container">
+          <h1 class="todos__heading">todos</h1>
+          <form class="todo__form">
+            <input class="todo__input" type="text" placeholder="What needs to be ?" />
+            <button class="visually-hidden" type="submit">Add</button>
+          </form>
+      
+          <ul class="todo__list"></ul>
+      
+          <div class="buttons">
+            <button class="btn todo-button__all">
+              All <strong class="btn-info all-button__info">0</strong>
+            </button>
+            <button class="btn todo-button__completed">
+              Completed <strong class="btn-info completed-button__info">0</strong>
+            </button>
+            <button class="btn todo-button__uncompleted">
+              Uncompleted <strong class="btn-info uncomleted-button__info">0</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template id="todo__template">
+      <li class="todo__item">
+        <label>
+          <input class="todo__check visually-hidden" type="checkbox" />
+          <span class="circle"></span>
+        </label>
+        <span class="todo__text"></span>
+        <button class="todo__delete-button" type="button">&times;</button>
+      </li>
+    </template>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
